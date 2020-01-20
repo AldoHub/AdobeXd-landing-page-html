@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Semantic Websites</title>
+</head>
+<body>
+    
+    <div class="container">
+    <img class="thing" src="assets/Mask Group 1.svg" />    
+    
+    <nav>
+        <ul>
+            <li><a href="#">EasySites</a></li>
+            <div id="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>  
+                <span class="bar"></span>
+            </div>  
+        </ul>
+        <ul id="toggle">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div>
+            <h1>Build SEO friendly <br/> websites with ease</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra et lacus non placerat. Sed malesuada sed nibh sit amet interdum. Nam viverra dui nec pulvinar finibus.</p>
+
+            <div class="ctas">
+                <a class="trial" href="#">Download Trial &nbsp;&nbsp; <i class="fas fa-download"></i></a>
+                <a class="learnmore" href="#">Learn More &nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <img class="designers" src="assets/Designers.svg" />
+    </header>
+    </div>
+
+    <script src="https://kit.fontawesome.com/049a4e7127.js" crossorigin="anonymous"></script>
+    <!-- codepen for menu animation: https://codepen.io/chrismabry/pen/PqYWYo-->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menu = document.querySelector("#menu");
+            const toggle = document.querySelector("#toggle");
+
+            menu.addEventListener("click", (e) => {
+                if(toggle.classList.contains("show")){
+                    menu.classList.remove("animate");
+                    toggle.classList.remove("show");
+                }else{
+                    menu.classList.add("animate");
+                    toggle.classList.add("show");
+                }
+            })
+        });   
+    
+    </script>
+
+
+</body>
+</html>
